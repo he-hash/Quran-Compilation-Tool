@@ -1,0 +1,464 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> ikhlas
+Rule 1     ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+Rule 2     ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+Terminals, with rules where they appear
+
+7arf3atf             : 1 1 2 2 2
+7arfjar1             : 2
+7arfjar2             : 2 2 2 2
+7arfjar3             : 2
+7arfjar4             : 1
+7arfjazm             : 1 1 1
+INT                  : 1 1 1 1 2 2 2 2 2
+a3oudou              : 2
+bassmala             : 1 2
+damir                : 1
+darfzaman            : 2 2
+error                : 
+fi3l2                : 2
+fi3lamr              : 1 2
+fi3lmad              : 2
+ismajrour2           : 2
+ismmawsoul           : 2
+ismmbm               : 2 2 2 2
+issm                 : 1 1
+issmj1               : 1 2
+issmj2               : 1 1
+khabar               : 1
+mad                  : 1
+modaf1               : 2
+modaf2               : 2
+modaf22              : 2
+modaf3               : 2
+moubtada2            : 1
+moudafilayh          : 2
+moudari31            : 1
+moudari32            : 1
+rabi                 : 2
+sifa                 : 1 2
+sifa2                : 1 2
+
+Nonterminals, with rules where they appear
+
+ikhlas               : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . ikhlas
+    (1) ikhlas -> . bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+    (2) ikhlas -> . bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    bassmala        shift and go to state 2
+
+    ikhlas                         shift and go to state 1
+
+state 1
+
+    (0) S' -> ikhlas .
+
+
+
+state 2
+
+    (1) ikhlas -> bassmala . issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+    (2) ikhlas -> bassmala . issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    issmj1          shift and go to state 3
+
+
+state 3
+
+    (1) ikhlas -> bassmala issmj1 . sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+    (2) ikhlas -> bassmala issmj1 . sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    sifa            shift and go to state 4
+
+
+state 4
+
+    (1) ikhlas -> bassmala issmj1 sifa . sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+    (2) ikhlas -> bassmala issmj1 sifa . sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    sifa2           shift and go to state 5
+
+
+state 5
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 . fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 . fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    fi3lamr         shift and go to state 6
+
+
+state 6
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr . damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr . a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    damir           shift and go to state 7
+    a3oudou         shift and go to state 8
+
+
+state 7
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir . issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    issmj2          shift and go to state 9
+
+
+state 8
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou . 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arfjar1        shift and go to state 10
+
+
+state 9
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 . issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    issm            shift and go to state 11
+
+
+state 10
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 . rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    rabi            shift and go to state 12
+
+
+state 11
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm . INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    INT             shift and go to state 13
+
+
+state 12
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi . moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    moudafilayh     shift and go to state 14
+
+
+state 13
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT . issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    issmj2          shift and go to state 15
+
+
+state 14
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh . INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    INT             shift and go to state 16
+
+
+state 15
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 . moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    moubtada2       shift and go to state 17
+
+
+state 16
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT . 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arfjar2        shift and go to state 18
+
+
+state 17
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 . INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    INT             shift and go to state 19
+
+
+state 18
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 . ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    ismmbm          shift and go to state 20
+
+
+state 19
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT . 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    7arfjazm        shift and go to state 21
+
+
+state 20
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm . ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    ismmawsoul      shift and go to state 22
+
+
+state 21
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm . moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    moudari32       shift and go to state 23
+
+
+state 22
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul . fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    fi3lmad         shift and go to state 24
+
+
+state 23
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 . 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    7arf3atf        shift and go to state 25
+
+
+state 24
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad . INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    INT             shift and go to state 26
+
+
+state 25
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf . 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    7arfjazm        shift and go to state 27
+
+
+state 26
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT . 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arf3atf        shift and go to state 28
+
+
+state 27
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm . mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    mad             shift and go to state 29
+
+
+state 28
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf . 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arfjar2        shift and go to state 30
+
+
+state 29
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad . INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    INT             shift and go to state 31
+
+
+state 30
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 . ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    ismmbm          shift and go to state 32
+
+
+state 31
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT . 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    7arf3atf        shift and go to state 33
+
+
+state 32
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm . modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    modaf1          shift and go to state 34
+
+
+state 33
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf . 7arfjazm moudari31 7arfjar4 khabar issm INT
+
+    7arfjazm        shift and go to state 35
+
+
+state 34
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 . darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    darfzaman       shift and go to state 36
+
+
+state 35
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm . moudari31 7arfjar4 khabar issm INT
+
+    moudari31       shift and go to state 37
+
+
+state 36
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman . fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    fi3l2           shift and go to state 38
+
+
+state 37
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 . 7arfjar4 khabar issm INT
+
+    7arfjar4        shift and go to state 39
+
+
+state 38
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 . INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    INT             shift and go to state 40
+
+
+state 39
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 . khabar issm INT
+
+    khabar          shift and go to state 41
+
+
+state 40
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT . 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arf3atf        shift and go to state 42
+
+
+state 41
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar . issm INT
+
+    issm            shift and go to state 43
+
+
+state 42
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf . 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arfjar2        shift and go to state 44
+
+
+state 43
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm . INT
+
+    INT             shift and go to state 45
+
+
+state 44
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 . ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    ismmbm          shift and go to state 46
+
+
+state 45
+
+    (1) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT .
+
+    $end            reduce using rule 1 (ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr damir issmj2 issm INT issmj2 moubtada2 INT 7arfjazm moudari32 7arf3atf 7arfjazm mad INT 7arf3atf 7arfjazm moudari31 7arfjar4 khabar issm INT .)
+
+
+state 46
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm . modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    modaf22         shift and go to state 47
+
+
+state 47
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 . 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arfjar3        shift and go to state 48
+
+
+state 48
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 . ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    ismajrour2      shift and go to state 49
+
+
+state 49
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 . INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    INT             shift and go to state 50
+
+
+state 50
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT . 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arf3atf        shift and go to state 51
+
+
+state 51
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf . 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT
+
+    7arfjar2        shift and go to state 52
+
+
+state 52
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 . ismmbm modaf2 darfzaman modaf3 INT
+
+    ismmbm          shift and go to state 53
+
+
+state 53
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm . modaf2 darfzaman modaf3 INT
+
+    modaf2          shift and go to state 54
+
+
+state 54
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 . darfzaman modaf3 INT
+
+    darfzaman       shift and go to state 55
+
+
+state 55
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman . modaf3 INT
+
+    modaf3          shift and go to state 56
+
+
+state 56
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 . INT
+
+    INT             shift and go to state 57
+
+
+state 57
+
+    (2) ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT .
+
+    $end            reduce using rule 2 (ikhlas -> bassmala issmj1 sifa sifa2 fi3lamr a3oudou 7arfjar1 rabi moudafilayh INT 7arfjar2 ismmbm ismmawsoul fi3lmad INT 7arf3atf 7arfjar2 ismmbm modaf1 darfzaman fi3l2 INT 7arf3atf 7arfjar2 ismmbm modaf22 7arfjar3 ismajrour2 INT 7arf3atf 7arfjar2 ismmbm modaf2 darfzaman modaf3 INT .)
+
